@@ -8,6 +8,9 @@ curl -i -u username:GitHubToken -H "Accept: application/vnd.github.v3+json" `htt
 Useful links and reads:
 
 https://docs.github.com/en/rest
+
 https://github.com/octokit/core.js#hooks
+
 https://docs.github.com/en/github-ae@latest/rest/guides/traversing-with-pagination
+
 https://docs.github.com/en/github-ae@latest/rest/overview/resources-in-the-rest-api
