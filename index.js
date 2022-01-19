@@ -43,9 +43,7 @@ const start = async function(ownerName, repoName,hookID) {
     hook_id: hookID,
     item_count: 10
   })
-  fs.appendFile('output.txt', JSON.stringify(response.data), function (err) {
-    if (err) return console.log(err);
-  });
+
   link=response.headers.link
   link_url = link.substring(
     link.indexOf("<") + 1, 
