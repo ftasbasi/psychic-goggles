@@ -2,7 +2,7 @@
 const fs = require("fs");
 const { Octokit } = require("@octokit/core");
 const octokit = new Octokit({ auth: `PUT GITHUB TOKEN HERE` });
-const date_limit=Date.parse('2021-11-01T00:01:00Z'); // redelivery beginning time
+const date_limit=Date.parse('2021-11-01T00:01:00Z'); // redelivery begin time
 function isBefore(dateIn)
 {
     return date_limit<Date.parse(dateIn);
@@ -64,7 +64,7 @@ const start = async function(ownerName, repoName,hookID) {
         subResponse = postDelivery(ownerName,repoName,hookID,element);
         console.log(subResponse);
       }); 
-      /* you may save event lists toa file with this block
+      /* you may save event lists to a file with this block
       fs.appendFile('output.txt', JSON.stringify(response.data), function (err) {
         if (err) return console.log(err);
       });
